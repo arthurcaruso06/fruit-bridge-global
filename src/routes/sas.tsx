@@ -27,29 +27,52 @@ function SasPage() {
 
   return (
     <div className="pt-32 pb-24 lg:pt-40 lg:pb-32">
-      <div className="mx-auto max-w-3xl px-6 lg:px-12">
+      {/* Hero com logo grande */}
+      <div className="mx-auto max-w-4xl px-6 lg:px-12 text-center mb-20">
         <motion.div
-          initial={{ opacity: 0, scale: 0.9 }}
+          initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.8 }}
-          className="flex justify-center mb-16"
+          transition={{ duration: 1, ease: [0.22, 1, 0.36, 1] }}
+          className="flex justify-center"
         >
-          <img src={sasLogo} alt="Viva Fruta SAS" className="h-48 lg:h-64 w-auto" />
+          <img src={sasLogo} alt="Viva Fruta SAS" className="h-56 lg:h-72 w-auto" />
         </motion.div>
+        <motion.div
+          initial={{ opacity: 0, width: 0 }}
+          animate={{ opacity: 1, width: "6rem" }}
+          transition={{ duration: 0.8, delay: 0.5 }}
+          className="h-px bg-primary mx-auto mt-10"
+        />
+      </div>
 
-        <div className="space-y-8">
+      {/* Conteúdo em cards */}
+      <div className="mx-auto max-w-5xl px-6 lg:px-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           {t.sasPage.paragraphs.map((p, i) => (
-            <motion.p
+            <motion.div
               key={i}
               {...fadeUp}
-              transition={{ ...fadeUp.transition, delay: i * 0.1 }}
-              className="text-lg text-foreground/75 leading-relaxed font-light"
+              transition={{ ...fadeUp.transition, delay: i * 0.12 }}
+              className="group p-8 lg:p-10 border border-border bg-card hover:border-primary/30 transition-all duration-500"
             >
-              {p}
-            </motion.p>
+              <span className="inline-block text-xs font-medium tracking-[0.2em] uppercase text-primary/60 mb-4">
+                0{i + 1}
+              </span>
+              <p className="text-foreground/75 leading-relaxed font-light">
+                {p}
+              </p>
+            </motion.div>
           ))}
         </div>
       </div>
+
+      {/* Barra decorativa final */}
+      <motion.div
+        {...fadeUp}
+        className="mx-auto max-w-5xl px-6 lg:px-12 mt-20"
+      >
+        <div className="h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+      </motion.div>
     </div>
   );
 }
