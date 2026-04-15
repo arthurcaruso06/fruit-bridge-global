@@ -333,26 +333,8 @@ function PartnersSection() {
           </h2>
           <div className="mt-4 w-20 h-0.5 bg-gold" />
         </motion.div>
-        <motion.div {...fadeUp} className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
-          {t.partners.main.map((name) => (
-            <div key={name} className="group p-10 bg-card border border-border text-center hover:border-primary/40 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 relative overflow-hidden">
-              <div className="absolute top-0 left-0 right-0 h-1 bg-primary/0 group-hover:bg-primary transition-colors duration-300" />
-              <span className="font-serif text-2xl font-medium text-foreground">{name}</span>
-            </div>
-          ))}
-        </motion.div>
-        <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.15 }} className="mb-16">
+        <motion.div {...fadeUp}>
           <LogoCarousel />
-        </motion.div>
-        <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.2 }}>
-          <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-3">
-            {t.partners.all.map((name, i) => (
-              <span key={name} className="flex items-center gap-2">
-                <span className="text-sm text-muted-foreground hover:text-foreground transition-colors">{name}</span>
-                {i < t.partners.all.length - 1 && <span className="text-border">•</span>}
-              </span>
-            ))}
-          </div>
         </motion.div>
       </div>
     </section>
