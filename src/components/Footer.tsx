@@ -1,5 +1,6 @@
 import { Link } from '@tanstack/react-router';
 import { useTranslation } from '@/i18n/LanguageContext';
+import logoImg from '@/assets/logo-viva-fruta.png';
 
 export function Footer() {
   const { t } = useTranslation();

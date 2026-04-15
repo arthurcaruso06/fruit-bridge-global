@@ -3,6 +3,7 @@ import { useTranslation } from '@/i18n/LanguageContext';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import type { Language } from '@/i18n/translations';
+import logoImg from '@/assets/logo-viva-fruta.png';
 
 const langs: { code: Language; label: string }[] = [
   { code: 'pt', label: 'PT' },
