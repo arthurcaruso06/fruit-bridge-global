@@ -1,0 +1,54 @@
+import { motion } from "framer-motion";
+import frutariaLogo from "@/assets/logos/frutaria.jpeg";
+import fruitsDePonentLogo from "@/assets/logos/fruits-de-ponent.jpeg";
+import zhenhaiLogo from "@/assets/logos/zhenhai.jpeg";
+import chilfreshLogo from "@/assets/logos/chilfresh.jpeg";
+import novafruitLogo from "@/assets/logos/novafruit.png";
+
+const logos = [
+  { src: frutariaLogo, alt: "Frutaria" },
+  { src: fruitsDePonentLogo, alt: "Fruits de Ponent" },
+  { src: zhenhaiLogo, alt: "Zhenhai" },
+  { src: chilfreshLogo, alt: "Chilfresh" },
+  { src: novafruitLogo, alt: "Novafruit Italia" },
+];
+
+// Duplicate for seamless loop
+const allLogos = [...logos, ...logos];
+
+export function LogoCarousel() {
+  return (
+    <div className="relative overflow-hidden py-8">
+      {/* Fade edges */}
+      <div className="absolute left-0 top-0 bottom-0 w-24 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none" />
+      <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
+
+      <motion.div
+        className="flex items-center gap-16"
+        animate={{ x: ["0%", "-50%"] }}
+        transition={{
+          x: {
+            repeat: Infinity,
+            repeatType: "loop",
+            duration: 25,
+            ease: "linear",
+          },
+        }}
+      >
+        {allLogos.map((logo, i) => (
+          <div
+            key={`${logo.alt}-${i}`}
+            className="flex-shrink-0 flex items-center justify-center h-20 w-48 grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
+          >
+            <img
+              src={logo.src}
+              alt={logo.alt}
+              className="max-h-full max-w-full object-contain"
+              loading="lazy"
+            />
+          </div>
+        ))}
+      </motion.div>
+    </div>
+  );
+}

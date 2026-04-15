@@ -5,6 +5,7 @@ import { WorldMap } from "@/components/WorldMap";
 import heroImg from "@/assets/hero-port.jpg";
 import fruitsImg from "@/assets/fruits-premium.png";
 import sasLogo from "@/assets/vivafruta-sas-logo.png";
+import { LogoCarousel } from "@/components/LogoCarousel";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -339,6 +340,9 @@ function PartnersSection() {
               <span className="font-serif text-2xl font-medium text-foreground">{name}</span>
             </div>
           ))}
+        </motion.div>
+        <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.15 }} className="mb-16">
+          <LogoCarousel />
         </motion.div>
         <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.2 }}>
           <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-3">
