@@ -32,19 +32,10 @@ function SasPage() {
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
-          className="flex justify-center mb-12"
+          className="flex justify-center mb-16"
         >
-          <img src={sasLogo} alt="Viva Fruta SAS" className="h-32 lg:h-40 w-auto" />
+          <img src={sasLogo} alt="Viva Fruta SAS" className="h-48 lg:h-64 w-auto" />
         </motion.div>
-
-        <motion.h1
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.2 }}
-          className="font-serif text-4xl lg:text-6xl font-light text-foreground mb-16"
-        >
-          {t.sasPage.title}
-        </motion.h1>
 
         <div className="space-y-8">
           {t.sasPage.paragraphs.map((p, i) => (
