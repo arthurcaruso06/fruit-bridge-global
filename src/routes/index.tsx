@@ -298,23 +298,39 @@ function GlobalSection() {
 
 function ProductsSection() {
   const { t } = useTranslation();
+
+  // Group products into categories for visual interest
+  const fruits = t.products.items;
+
   return (
     <section id="produtos" className="py-24 lg:py-32 scroll-mt-20 bg-secondary">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <motion.div {...fadeUp} className="mb-16">
-          <h2 className="font-serif text-3xl lg:text-5xl font-light text-foreground">
-            {t.products.title}
-          </h2>
-          <div className="mt-4 w-20 h-0.5 bg-gold" />
+        <motion.div {...fadeUp} className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 mb-16">
+          <div>
+            <h2 className="font-serif text-3xl lg:text-5xl font-light text-foreground">
+              {t.products.title}
+            </h2>
+            <div className="mt-4 w-20 h-0.5 bg-gold" />
+          </div>
+          <p className="text-sm text-muted-foreground max-w-md lg:text-right leading-relaxed">
+            Frutas frescas, congeladas e processadas de alta qualidade, selecionadas nos melhores pomares do mundo.
+          </p>
         </motion.div>
-        <motion.div {...fadeUp} className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-          {t.products.items.map((item) => (
-            <div
+
+        <motion.div {...fadeUp} className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-3">
+          {fruits.map((item, i) => (
+            <motion.div
               key={item}
-              className="group px-5 py-4 bg-card border border-border text-center hover:border-primary/40 hover:bg-primary/5 hover:shadow-md transition-all duration-300 cursor-default"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: i * 0.02 }}
+              className="group relative px-4 py-5 bg-card border border-border text-center hover:border-gold/50 hover:shadow-lg hover:-translate-y-0.5 transition-all duration-300 cursor-default overflow-hidden"
             >
-              <span className="text-sm font-medium text-foreground/75 group-hover:text-foreground transition-colors">{item}</span>
-            </div>
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/0 to-gold/0 group-hover:from-primary/5 group-hover:to-gold/5 transition-all duration-300" />
+              <div className="absolute top-0 left-0 right-0 h-0.5 bg-gold/0 group-hover:bg-gold transition-colors duration-300" />
+              <span className="relative z-10 text-sm font-medium text-foreground/70 group-hover:text-foreground transition-colors duration-300">{item}</span>
+            </motion.div>
           ))}
         </motion.div>
       </div>
