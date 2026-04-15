@@ -237,7 +237,7 @@ function GlobalSection() {
   ];
 
   return (
-    <section className="py-24 lg:py-32 bg-foreground text-primary-foreground overflow-hidden">
+    <section className="py-24 lg:py-32 bg-primary text-primary-foreground overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         {/* Header */}
         <motion.div {...fadeUp} className="mb-20">
