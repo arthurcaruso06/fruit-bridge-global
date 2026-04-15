@@ -5,6 +5,7 @@ import { WorldMap } from "@/components/WorldMap";
 import heroImg from "@/assets/hero-port.jpg";
 import fruitsImg from "@/assets/fruits-premium.png";
 import sasLogo from "@/assets/vivafruta-sas-logo.png";
+import { LogoCarousel } from "@/components/LogoCarousel";
 
 export const Route = createFileRoute("/")({
   component: Index,
