@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { useTranslation } from "@/i18n/LanguageContext";
 import { WorldMap } from "@/components/WorldMap";
 import heroImg from "@/assets/hero-port.jpg";
-import fruitsImg from "@/assets/fruits-premium.jpg";
+import fruitsImg from "@/assets/fruits-premium.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
