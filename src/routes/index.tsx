@@ -341,6 +341,9 @@ function PartnersSection() {
             </div>
           ))}
         </motion.div>
+        <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.15 }} className="mb-16">
+          <LogoCarousel />
+        </motion.div>
         <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.2 }}>
           <div className="flex flex-wrap items-center justify-center gap-x-2 gap-y-3">
             {t.partners.all.map((name, i) => (
