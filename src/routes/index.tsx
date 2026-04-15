@@ -218,17 +218,81 @@ function DifferentialsSection() {
 
 function GlobalSection() {
   const { t } = useTranslation();
+
+  const stats = [
+    { value: "7+", label: "Países" },
+    { value: "3", label: "Continentes" },
+    { value: "365", label: "Dias ativos" },
+    { value: "100%", label: "Rastreável" },
+  ];
+
+  const origins = [
+    { country: "Chile", flag: "🇨🇱", products: "Uvas, Cerejas, Ameixas" },
+    { country: "Argentina", flag: "🇦🇷", products: "Peras, Maçãs, Limões" },
+    { country: "EUA", flag: "🇺🇸", products: "Maçãs, Cerejas" },
+    { country: "Espanha", flag: "🇪🇸", products: "Citros, Caquis" },
+    { country: "Itália", flag: "🇮🇹", products: "Kiwis, Uvas" },
+    { country: "África do Sul", flag: "🇿🇦", products: "Citros, Uvas" },
+    { country: "China", flag: "🇨🇳", products: "Peras, Alho" },
+  ];
+
   return (
-    <section className="py-24 lg:py-32 bg-primary text-primary-foreground overflow-hidden">
+    <section className="py-24 lg:py-32 bg-foreground text-primary-foreground overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
-        <motion.div {...fadeUp} className="text-center mb-12">
-          <h2 className="font-serif text-3xl lg:text-5xl font-light">{t.global.title}</h2>
-          <p className="mt-6 text-lg text-primary-foreground/70 max-w-2xl mx-auto font-light leading-relaxed">
-            {t.global.text}
-          </p>
+        {/* Header */}
+        <motion.div {...fadeUp} className="mb-20">
+          <div className="flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8">
+            <div className="max-w-2xl">
+              <div className="w-16 h-0.5 bg-gold mb-8" />
+              <h2 className="font-serif text-3xl lg:text-5xl font-light">{t.global.title}</h2>
+              <p className="mt-6 text-lg text-primary-foreground/60 font-light leading-relaxed">
+                {t.global.text}
+              </p>
+            </div>
+            {/* Stats */}
+            <div className="flex gap-8 lg:gap-12">
+              {stats.map((stat, i) => (
+                <motion.div
+                  key={stat.label}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.3 + i * 0.1 }}
+                  className="text-center"
+                >
+                  <span className="block font-serif text-3xl lg:text-4xl font-light text-gold">{stat.value}</span>
+                  <span className="block mt-1 text-xs tracking-[0.2em] uppercase text-primary-foreground/50">{stat.label}</span>
+                </motion.div>
+              ))}
+            </div>
+          </div>
         </motion.div>
-        <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.2 }}>
-          <WorldMap />
+
+        {/* Grid de origens */}
+        <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4">
+          {origins.map((origin, i) => (
+            <motion.div
+              key={origin.country}
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.5, delay: i * 0.07 }}
+              className="group relative bg-primary-foreground/5 border border-primary-foreground/10 p-6 text-center hover:bg-primary-foreground/10 hover:border-gold/30 transition-all duration-300"
+            >
+              <span className="text-3xl block mb-3">{origin.flag}</span>
+              <span className="block font-serif text-sm font-medium text-primary-foreground tracking-wide">{origin.country}</span>
+              <span className="block mt-2 text-xs text-primary-foreground/45 leading-relaxed">{origin.products}</span>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Linha central Brasil */}
+        <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.4 }} className="mt-16 text-center">
+          <div className="inline-flex items-center gap-4">
+            <div className="w-12 h-px bg-gold/40" />
+            <span className="text-gold font-serif text-lg tracking-wide">Brasil — Hub Central</span>
+            <div className="w-12 h-px bg-gold/40" />
+          </div>
         </motion.div>
       </div>
     </section>
