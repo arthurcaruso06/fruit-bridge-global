@@ -384,20 +384,18 @@ function TeamPreviewSection() {
 function SasPreviewSection() {
   const { t } = useTranslation();
   return (
-    <section className="py-24 lg:py-32 bg-foreground text-primary-foreground">
+    <section className="py-24 lg:py-32 bg-secondary">
       <div className="mx-auto max-w-7xl px-6 lg:px-12 text-center">
         <motion.div {...fadeUp} className="flex justify-center">
-          <div className="p-6 border border-primary-foreground/15 rounded-lg inline-block">
-            <img src={sasLogo} alt="Viva Fruta SAS" className="h-36 lg:h-48 w-auto" />
-          </div>
+          <img src={sasLogo} alt="Viva Fruta SAS" className="h-48 lg:h-64 w-auto" />
         </motion.div>
-        <motion.p {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.1 }} className="mt-8 text-lg text-primary-foreground/65 max-w-xl mx-auto font-light">
+        <motion.p {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.1 }} className="mt-8 text-lg text-muted-foreground max-w-xl mx-auto font-light leading-relaxed">
           {t.sasPreview.text}
         </motion.p>
         <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.2 }}>
           <Link
             to="/sas"
-            className="inline-block mt-10 px-8 py-3.5 border border-primary-foreground/30 text-primary-foreground text-sm font-medium tracking-wider hover:bg-primary-foreground hover:text-foreground transition-colors"
+            className="inline-block mt-10 px-8 py-3.5 bg-primary text-primary-foreground text-sm font-medium tracking-wider hover:bg-primary/90 transition-colors"
           >
             {t.sasPreview.cta}
           </Link>
