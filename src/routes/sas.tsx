@@ -28,10 +28,19 @@ function SasPage() {
   return (
     <div className="pt-32 pb-24 lg:pt-40 lg:pb-32">
       <div className="mx-auto max-w-3xl px-6 lg:px-12">
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{ duration: 0.8 }}
+          className="flex justify-center mb-12"
+        >
+          <img src={sasLogo} alt="Viva Fruta SAS" className="h-32 lg:h-40 w-auto" />
+        </motion.div>
+
         <motion.h1
           initial={{ opacity: 0, y: 40 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
+          transition={{ duration: 0.8, delay: 0.2 }}
           className="font-serif text-4xl lg:text-6xl font-light text-foreground mb-16"
         >
           {t.sasPage.title}
