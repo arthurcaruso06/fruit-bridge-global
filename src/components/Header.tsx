@@ -49,7 +49,6 @@ export function Header() {
           <Link to="/" className="flex items-center gap-3 transition-colors">
             <img src={logoImg} alt="Viva Fruta" className="h-12 w-auto" />
           </Link>
-          </Link>
 
           <nav className="hidden lg:flex items-center gap-10">
             {navLinks.map((link) => (
