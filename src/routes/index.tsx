@@ -268,6 +268,11 @@ function GlobalSection() {
           </div>
         </motion.div>
 
+        {/* Mapa */}
+        <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.2 }} className="mb-16">
+          <WorldMap />
+        </motion.div>
+
         {/* Grid de origens */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-7 gap-4">
           {origins.map((origin, i) => (
@@ -285,15 +290,6 @@ function GlobalSection() {
             </motion.div>
           ))}
         </div>
-
-        {/* Linha central Brasil */}
-        <motion.div {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.4 }} className="mt-16 text-center">
-          <div className="inline-flex items-center gap-4">
-            <div className="w-12 h-px bg-gold/40" />
-            <span className="text-gold font-serif text-lg tracking-wide">Brasil — Hub Central</span>
-            <div className="w-12 h-px bg-gold/40" />
-          </div>
-        </motion.div>
       </div>
     </section>
   );
