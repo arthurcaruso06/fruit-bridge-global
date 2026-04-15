@@ -69,13 +69,19 @@ function HeroSection() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ duration: 0.8, delay: 0.6 }}
-          className="mt-14 flex flex-wrap items-center justify-center gap-8 text-sm text-primary-foreground/60"
+          className="mt-16 flex flex-wrap items-center justify-center gap-6 md:gap-10"
         >
-          {[t.hero.experience, t.hero.international, t.hero.quality].map((item) => (
-            <span key={item} className="flex items-center gap-2.5">
-              <span className="w-1.5 h-1.5 rounded-full bg-gold" />
-              {item}
-            </span>
+          {[t.hero.experience, t.hero.international, t.hero.quality].map((item, i) => (
+            <motion.div
+              key={item}
+              initial={{ opacity: 0, y: 20, scale: 0.9 }}
+              animate={{ opacity: 1, y: 0, scale: 1 }}
+              transition={{ duration: 0.6, delay: 0.8 + i * 0.2, ease: [0.22, 1, 0.36, 1] }}
+              className="flex flex-col items-center gap-3 px-6 py-4 border border-primary-foreground/15 backdrop-blur-sm bg-primary-foreground/5 rounded-lg"
+            >
+              <span className="w-2.5 h-2.5 rounded-full bg-gold animate-[pulse_3s_ease-in-out_infinite]" />
+              <span className="text-base md:text-lg font-medium text-primary-foreground tracking-wide">{item}</span>
+            </motion.div>
           ))}
         </motion.div>
         <motion.div

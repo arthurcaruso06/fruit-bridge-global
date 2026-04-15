@@ -47,7 +47,7 @@ export function Header() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="flex h-20 items-center justify-between">
           <Link to="/" className="flex items-center transition-colors">
-            <img src={logoImg} alt="Viva Fruta" className="h-14 w-auto rounded bg-white/90 p-1" />
+            <img src={logoImg} alt="Viva Fruta" className={`h-14 w-auto transition-all duration-500 ${scrolled || !isHome ? '' : 'brightness-0 invert'}`} />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-10">
