@@ -10,7 +10,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
           <div>
-            <span className="font-serif text-2xl font-semibold tracking-wider">VIVA FRUTAS</span>
+            <img src={logoImg} alt="Viva Fruta" className="h-14 w-auto brightness-0 invert" />
             <p className="mt-4 text-sm text-primary-foreground/60 leading-relaxed max-w-xs">
               {t.footer.tagline}
             </p>

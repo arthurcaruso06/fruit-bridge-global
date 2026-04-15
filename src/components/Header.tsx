@@ -46,8 +46,9 @@ export function Header() {
     <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${headerBg}`}>
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="flex h-20 items-center justify-between">
-          <Link to="/" className={`font-serif text-2xl font-semibold tracking-wider transition-colors ${textColor}`}>
-            VIVA FRUTAS
+          <Link to="/" className="flex items-center gap-3 transition-colors">
+            <img src={logoImg} alt="Viva Fruta" className="h-12 w-auto" />
+          </Link>
           </Link>
 
           <nav className="hidden lg:flex items-center gap-10">
