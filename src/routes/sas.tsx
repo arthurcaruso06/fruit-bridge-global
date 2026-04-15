@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { motion } from "framer-motion";
 import { useTranslation } from "@/i18n/LanguageContext";
+import sasLogo from "@/assets/vivafruta-sas-logo.png";
 
 export const Route = createFileRoute("/sas")({
   component: SasPage,
