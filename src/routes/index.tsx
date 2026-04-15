@@ -4,6 +4,7 @@ import { useTranslation } from "@/i18n/LanguageContext";
 import { WorldMap } from "@/components/WorldMap";
 import heroImg from "@/assets/hero-port.jpg";
 import fruitsImg from "@/assets/fruits-premium.png";
+import sasLogo from "@/assets/vivafruta-sas-logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
