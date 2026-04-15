@@ -4,6 +4,7 @@ import { useTranslation } from "@/i18n/LanguageContext";
 import { WorldMap } from "@/components/WorldMap";
 import heroImg from "@/assets/hero-port.jpg";
 import fruitsImg from "@/assets/fruits-premium.png";
+import sasLogo from "@/assets/vivafruta-sas-logo.png";
 
 export const Route = createFileRoute("/")({
   component: Index,
@@ -295,9 +296,9 @@ function SasPreviewSection() {
   return (
     <section className="py-24 lg:py-32 bg-muted">
       <div className="mx-auto max-w-7xl px-6 lg:px-12 text-center">
-        <motion.h2 {...fadeUp} className="font-serif text-3xl lg:text-5xl font-light text-foreground">
-          {t.sasPreview.title}
-        </motion.h2>
+        <motion.div {...fadeUp} className="flex justify-center">
+          <img src={sasLogo} alt="Viva Fruta SAS" className="h-24 lg:h-32 w-auto" />
+        </motion.div>
         <motion.p {...fadeUp} transition={{ ...fadeUp.transition, delay: 0.1 }} className="mt-6 text-lg text-muted-foreground max-w-xl mx-auto font-light">
           {t.sasPreview.text}
         </motion.p>
