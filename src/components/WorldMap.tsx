@@ -1,17 +1,17 @@
 import { motion } from "framer-motion";
 import { worldMapPath } from "./worldMapPath";
 
-// Projected coordinates (equirectangular, 900x500 canvas)
-const brazil = { x: 385, y: 305 };
+// Equirectangular: x=(lon+180)/360*900, y=(90-lat)/180*500
+const brazil = { x: 333.5, y: 315.3 };
 
 const countries = [
-  { name: "USA", x: 175, y: 195, label: "EUA" },
-  { name: "Chile", x: 310, y: 380, label: "Chile" },
-  { name: "Argentina", x: 340, y: 395, label: "Argentina" },
-  { name: "Spain", x: 498, y: 195, label: "Espanha" },
-  { name: "Italy", x: 530, y: 190, label: "Itália" },
-  { name: "South Africa", x: 570, y: 385, label: "Á. do Sul" },
-  { name: "China", x: 755, y: 195, label: "China" },
+  { name: "USA", x: 151.5, y: 147.8, label: "EUA" },
+  { name: "Chile", x: 273.2, y: 342.8, label: "Chile" },
+  { name: "Argentina", x: 304.0, y: 346.1, label: "Argentina" },
+  { name: "Spain", x: 440.8, y: 137.8, label: "Espanha" },
+  { name: "Italy", x: 481.2, y: 133.6, label: "Itália" },
+  { name: "South Africa", x: 496.0, y: 344.2, label: "Á. do Sul" },
+  { name: "China", x: 741.0, y: 139.2, label: "China" },
 ];
 
 export function WorldMap() {
