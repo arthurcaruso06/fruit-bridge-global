@@ -83,7 +83,7 @@ const pt: TranslationSet = {
     title: 'Produtos',
     items: ['Alho', 'Ameixa', 'Cebola', 'Cereja', 'Kiwi', 'Laranja', 'Limão', 'Maçã', 'Melão', 'Mirtilo', 'Nectarina', 'Pera', 'Pêssego', 'Pomelo', 'Romã', 'Tangerina', 'Uva'],
   },
-  partners: { title: 'Representadas', ...partners },
+  partners: { title: 'Parceiros', ...partners },
   teamPreview: { text: 'Na Viva, nossa força está no time que faz acontecer.', cta: 'Conheça nosso time' },
   sasPreview: { title: 'SAS', text: 'Conheça a SAS, nossa empresa de trade especializada na comercialização e distribuição de frutas frescas importadas.', cta: 'Saiba mais' },
   historyPage: {
@@ -167,7 +167,7 @@ const en: TranslationSet = {
     title: 'Products',
     items: ['Garlic', 'Plum', 'Onion', 'Cherry', 'Kiwi', 'Orange', 'Lemon', 'Apple', 'Melon', 'Blueberry', 'Nectarine', 'Pear', 'Peach', 'Pomelo', 'Pomegranate', 'Tangerine', 'Grape'],
   },
-  partners: { title: 'Represented Companies', ...partners },
+  partners: { title: 'Partners', ...partners },
   teamPreview: { text: 'At Viva, our strength lies in the team that makes it happen.', cta: 'Meet our team' },
   sasPreview: { title: 'SAS', text: 'Discover SAS, our trade company specialized in the commercialization and distribution of imported fresh fruits.', cta: 'Learn more' },
   historyPage: {
@@ -251,7 +251,7 @@ const es: TranslationSet = {
     title: 'Productos',
     items: ['Ajo', 'Ciruela', 'Cebolla', 'Cereza', 'Kiwi', 'Naranja', 'Limón', 'Manzana', 'Melón', 'Arándano', 'Nectarina', 'Pera', 'Melocotón', 'Pomelo', 'Granada', 'Mandarina', 'Uva'],
   },
-  partners: { title: 'Representadas', ...partners },
+  partners: { title: 'Socios', ...partners },
   teamPreview: { text: 'En Viva, nuestra fuerza está en el equipo que hace que las cosas sucedan.', cta: 'Conoce nuestro equipo' },
   sasPreview: { title: 'SAS', text: 'Conozca la SAS, nuestra empresa de trade especializada en la comercialización y distribución de frutas frescas importadas.', cta: 'Saber más' },
   historyPage: {
