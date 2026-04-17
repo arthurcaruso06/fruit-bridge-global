@@ -81,7 +81,7 @@ const pt: TranslationSet = {
   },
   products: {
     title: 'Produtos',
-    items: ['Abacate', 'Abacaxi', 'Alho', 'Ameixa', 'Amora', 'Caqui', 'Cebola', 'Cenoura', 'Cereja', 'Cereja Marrasquino', 'Cereja Sulfitada', 'Cranberry', 'Framboesa', 'Gojiberry', 'Groselha', 'Kiwi', 'Laranja', 'Limão', 'Maçã', 'Melão', 'Mirtilo', 'Morango', 'Nectarina', 'Pera', 'Pêssego', 'Pomelo', 'Romã', 'Tangerina', 'Uva', 'Morango Hoppe', 'Amora Frozen'],
+    items: ['Alho', 'Ameixa', 'Cebola', 'Cereja', 'Kiwi', 'Laranja', 'Limão', 'Maçã', 'Melão', 'Mirtilo', 'Nectarina', 'Pera', 'Pêssego', 'Pomelo', 'Romã', 'Tangerina', 'Uva'],
   },
   partners: { title: 'Representadas', ...partners },
   teamPreview: { text: 'Na Viva, nossa força está no time que faz acontecer.', cta: 'Conheça nosso time' },
@@ -165,7 +165,7 @@ const en: TranslationSet = {
   },
   products: {
     title: 'Products',
-    items: ['Avocado', 'Pineapple', 'Garlic', 'Plum', 'Blackberry', 'Persimmon', 'Onion', 'Carrot', 'Cherry', 'Maraschino Cherry', 'Sulfited Cherry', 'Cranberry', 'Raspberry', 'Goji Berry', 'Currant', 'Kiwi', 'Orange', 'Lemon', 'Apple', 'Melon', 'Blueberry', 'Strawberry', 'Nectarine', 'Pear', 'Peach', 'Pomelo', 'Pomegranate', 'Tangerine', 'Grape', 'Hoppe Strawberry', 'Frozen Blackberry'],
+    items: ['Garlic', 'Plum', 'Onion', 'Cherry', 'Kiwi', 'Orange', 'Lemon', 'Apple', 'Melon', 'Blueberry', 'Nectarine', 'Pear', 'Peach', 'Pomelo', 'Pomegranate', 'Tangerine', 'Grape'],
   },
   partners: { title: 'Represented Companies', ...partners },
   teamPreview: { text: 'At Viva, our strength lies in the team that makes it happen.', cta: 'Meet our team' },
@@ -249,7 +249,7 @@ const es: TranslationSet = {
   },
   products: {
     title: 'Productos',
-    items: ['Aguacate', 'Piña', 'Ajo', 'Ciruela', 'Mora', 'Caqui', 'Cebolla', 'Zanahoria', 'Cereza', 'Cereza Marrasquino', 'Cereza Sulfitada', 'Cranberry', 'Frambuesa', 'Goji Berry', 'Grosella', 'Kiwi', 'Naranja', 'Limón', 'Manzana', 'Melón', 'Arándano', 'Fresa', 'Nectarina', 'Pera', 'Melocotón', 'Pomelo', 'Granada', 'Mandarina', 'Uva', 'Fresa Hoppe', 'Mora Frozen'],
+    items: ['Ajo', 'Ciruela', 'Cebolla', 'Cereza', 'Kiwi', 'Naranja', 'Limón', 'Manzana', 'Melón', 'Arándano', 'Nectarina', 'Pera', 'Melocotón', 'Pomelo', 'Granada', 'Mandarina', 'Uva'],
   },
   partners: { title: 'Representadas', ...partners },
   teamPreview: { text: 'En Viva, nuestra fuerza está en el equipo que hace que las cosas sucedan.', cta: 'Conoce nuestro equipo' },
