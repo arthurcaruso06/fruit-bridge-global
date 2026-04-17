@@ -71,12 +71,23 @@ function SasPage() {
         ))}
       </div>
 
-      {/* Linha decorativa final */}
+      {/* Endereço */}
       <motion.div
         {...fadeUp}
         className="mx-auto max-w-3xl px-6 lg:px-12 mt-20"
       >
-        <div className="h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
+        <div className="h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent mb-12" />
+        <div className="text-center">
+          <h3 className="text-xs font-medium tracking-[0.2em] uppercase text-muted-foreground mb-4">
+            Endereço
+          </h3>
+          <p className="text-foreground/80 text-base lg:text-lg font-light leading-relaxed">
+            Gral. Dr Arturo J. Balinas
+            <br />
+            Montevideo, Uruguai
+          </p>
+          <p className="mt-3 text-sm text-muted-foreground">RUT: 219035730017</p>
+        </div>
       </motion.div>
     </div>
   );
