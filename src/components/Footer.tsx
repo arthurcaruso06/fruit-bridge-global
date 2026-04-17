@@ -33,9 +33,18 @@ export function Footer() {
             <h4 className="text-xs font-medium tracking-[0.2em] uppercase text-primary-foreground/40 mb-6">
               {t.contactPage.contactsTitle}
             </h4>
-            <div className="space-y-2 text-sm text-primary-foreground/70">
+            <div className="space-y-3 text-sm text-primary-foreground/70">
               <p>{t.contactPage.phone}</p>
-              <p className="whitespace-pre-line">{t.contactPage.address}</p>
+              <div>
+                <p className="text-xs uppercase tracking-wider text-primary-foreground/40 mb-1">Viva Fruta</p>
+                <p className="whitespace-pre-line">{t.contactPage.address}</p>
+                <p className="mt-1">CNPJ: 18.792.280/0001-83</p>
+              </div>
+              <div>
+                <p className="text-xs uppercase tracking-wider text-primary-foreground/40 mb-1">Viva Fruta SAS</p>
+                <p>Gral. Dr Arturo J. Balinas – Montevideo, Uruguai</p>
+                <p>RUT: 219035730017</p>
+              </div>
             </div>
           </div>
         </div>
