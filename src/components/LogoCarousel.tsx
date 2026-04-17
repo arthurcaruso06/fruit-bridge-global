@@ -4,6 +4,8 @@ import fruitsDePonentLogo from "@/assets/logos/fruits-de-ponent.jpeg";
 import zhenhaiLogo from "@/assets/logos/zhenhai.jpeg";
 import chilfreshLogo from "@/assets/logos/chilfresh.jpeg";
 import novafruitLogo from "@/assets/logos/novafruit.png";
+import frueatLogo from "@/assets/logos/frueat.png";
+import novacoopLogo from "@/assets/logos/novacoop.png";
 
 const logos = [
   { src: frutariaLogo, alt: "Frutaria" },
@@ -11,6 +13,8 @@ const logos = [
   { src: zhenhaiLogo, alt: "Zhenhai" },
   { src: chilfreshLogo, alt: "Chilfresh" },
   { src: novafruitLogo, alt: "Novafruit Italia" },
+  { src: frueatLogo, alt: "Frueat by Moudiris" },
+  { src: novacoopLogo, alt: "Novacoop Mediterranea" },
 ];
 
 // Duplicate for seamless loop
