@@ -42,7 +42,7 @@ const partners = {
 const pt: TranslationSet = {
   nav: { home: 'Home', history: 'Nossa História', team: 'Nosso Time', products: 'Produtos', sas: 'SAS', contact: 'Contatos' },
   hero: {
-    title: 'Trading internacional de frutas com controle, velocidade e confiança.',
+    title: 'Conectando boas pessoas.',
     subtitle: 'Representamos produtores globais e garantimos qualidade na chegada, conectando origem e mercado com precisão.',
     experience: '+20 anos de experiência',
     international: 'Atuação internacional',
@@ -126,7 +126,7 @@ const pt: TranslationSet = {
 const en: TranslationSet = {
   nav: { home: 'Home', history: 'Our History', team: 'Our Team', products: 'Products', sas: 'SAS', contact: 'Contact' },
   hero: {
-    title: 'International fruit trading with control, speed, and trust.',
+    title: 'Connecting good people.',
     subtitle: 'We represent global producers and ensure quality upon arrival, connecting origin and market with precision.',
     experience: '+20 years of experience',
     international: 'International presence',
@@ -210,7 +210,7 @@ const en: TranslationSet = {
 const es: TranslationSet = {
   nav: { home: 'Inicio', history: 'Nuestra Historia', team: 'Nuestro Equipo', products: 'Productos', sas: 'SAS', contact: 'Contacto' },
   hero: {
-    title: 'Trading internacional de frutas con control, velocidad y confianza.',
+    title: 'Conectando buenas personas.',
     subtitle: 'Representamos productores globales y garantizamos calidad en la llegada, conectando origen y mercado con precisión.',
     experience: '+20 años de experiencia',
     international: 'Actuación internacional',
