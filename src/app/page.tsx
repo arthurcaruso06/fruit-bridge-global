@@ -135,10 +135,14 @@ function AboutSection() {
             {/* Decorative background glow to link with aesthetics */}
             <motion.div
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] aspect-square rounded-full bg-primary/5 blur-3xl pointer-events-none"
-              animate={isMobile ? undefined : {
-                scale: [1, 1.05, 1],
-                opacity: [0.5, 0.8, 0.5],
-              }}
+              animate={
+                isMobile
+                  ? undefined
+                  : {
+                      scale: [1, 1.05, 1],
+                      opacity: [0.5, 0.8, 0.5],
+                    }
+              }
               transition={{
                 duration: 8,
                 repeat: Infinity,
@@ -151,10 +155,14 @@ function AboutSection() {
               src={fruitsImg.src}
               alt="Fresh fruits"
               className="w-full h-auto max-h-[600px] object-contain mix-blend-multiply relative z-10"
-              animate={isMobile ? undefined : {
-                y: [0, -20, 0],
-                rotate: [0, 2, -1, 0],
-              }}
+              animate={
+                isMobile
+                  ? undefined
+                  : {
+                      y: [0, -20, 0],
+                      rotate: [0, 2, -1, 0],
+                    }
+              }
               transition={{
                 duration: 7,
                 repeat: Infinity,

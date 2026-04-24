@@ -1,1 +1,33 @@
-self.__BUILD_MANIFEST={polyfillFiles:["static/chunks/polyfills-42372ed130431b0a.js"],devFiles:[],ampDevFiles:[],lowPriorityFiles:[],rootMainFiles:["static/chunks/webpack-7ce65695ae521ebf.js","static/chunks/4bd1b696-927b5d87d2664d33.js","static/chunks/517-96c55c7a58de6b84.js","static/chunks/main-app-7be9cc69bec5c8bc.js"],rootMainFilesTree:{},pages:{"/_app":["static/chunks/webpack-7ce65695ae521ebf.js","static/chunks/framework-b76b766f590b2b6c.js","static/chunks/main-26e2bd14119b4860.js","static/chunks/pages/_app-42ef6f0c9ee99f63.js"],"/_error":["static/chunks/webpack-7ce65695ae521ebf.js","static/chunks/framework-b76b766f590b2b6c.js","static/chunks/main-26e2bd14119b4860.js","static/chunks/pages/_error-f44bc0d037a5fda4.js"]},ampFirstPages:[]},self.__BUILD_MANIFEST.lowPriorityFiles=["/static/"+process.env.__NEXT_BUILD_ID+"/_buildManifest.js",,"/static/"+process.env.__NEXT_BUILD_ID+"/_ssgManifest.js"];
+((self.__BUILD_MANIFEST = {
+  polyfillFiles: ["static/chunks/polyfills-42372ed130431b0a.js"],
+  devFiles: [],
+  ampDevFiles: [],
+  lowPriorityFiles: [],
+  rootMainFiles: [
+    "static/chunks/webpack-7ce65695ae521ebf.js",
+    "static/chunks/4bd1b696-927b5d87d2664d33.js",
+    "static/chunks/517-96c55c7a58de6b84.js",
+    "static/chunks/main-app-7be9cc69bec5c8bc.js",
+  ],
+  rootMainFilesTree: {},
+  pages: {
+    "/_app": [
+      "static/chunks/webpack-7ce65695ae521ebf.js",
+      "static/chunks/framework-b76b766f590b2b6c.js",
+      "static/chunks/main-26e2bd14119b4860.js",
+      "static/chunks/pages/_app-42ef6f0c9ee99f63.js",
+    ],
+    "/_error": [
+      "static/chunks/webpack-7ce65695ae521ebf.js",
+      "static/chunks/framework-b76b766f590b2b6c.js",
+      "static/chunks/main-26e2bd14119b4860.js",
+      "static/chunks/pages/_error-f44bc0d037a5fda4.js",
+    ],
+  },
+  ampFirstPages: [],
+}),
+  (self.__BUILD_MANIFEST.lowPriorityFiles = [
+    "/static/" + process.env.__NEXT_BUILD_ID + "/_buildManifest.js",
+    ,
+    "/static/" + process.env.__NEXT_BUILD_ID + "/_ssgManifest.js",
+  ]));

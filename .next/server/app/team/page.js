@@ -1,1 +1,256 @@
-(()=>{var e={};e.id=898,e.ids=[898],e.modules={846:e=>{"use strict";e.exports=require("next/dist/compiled/next-server/app-page.runtime.prod.js")},9121:e=>{"use strict";e.exports=require("next/dist/server/app-render/action-async-storage.external.js")},3295:e=>{"use strict";e.exports=require("next/dist/server/app-render/after-task-async-storage.external.js")},9294:e=>{"use strict";e.exports=require("next/dist/server/app-render/work-async-storage.external.js")},3033:e=>{"use strict";e.exports=require("next/dist/server/app-render/work-unit-async-storage.external.js")},3873:e=>{"use strict";e.exports=require("path")},9551:e=>{"use strict";e.exports=require("url")},4779:(e,t,r)=>{"use strict";r.r(t),r.d(t,{GlobalError:()=>n.a,__next_app__:()=>x,pages:()=>p,routeModule:()=>c,tree:()=>d});var a=r(260),s=r(8203),i=r(5155),n=r.n(i),o=r(7292),l={};for(let e in o)0>["default","tree","pages","GlobalError","__next_app__","routeModule"].indexOf(e)&&(l[e]=()=>o[e]);r.d(t,l);let d=["",{children:["team",{children:["__PAGE__",{},{page:[()=>Promise.resolve().then(r.bind(r,9613)),"C:\\Users\\gabri\\fruit-bridge-global\\src\\app\\team\\page.tsx"]}]},{metadata:{icon:[async e=>(await Promise.resolve().then(r.bind(r,8162))).default(e)],apple:[],openGraph:[],twitter:[],manifest:void 0}}]},{layout:[()=>Promise.resolve().then(r.bind(r,1354)),"C:\\Users\\gabri\\fruit-bridge-global\\src\\app\\layout.tsx"],"not-found":[()=>Promise.resolve().then(r.t.bind(r,9937,23)),"next/dist/client/components/not-found-error"],forbidden:[()=>Promise.resolve().then(r.t.bind(r,9116,23)),"next/dist/client/components/forbidden-error"],unauthorized:[()=>Promise.resolve().then(r.t.bind(r,1485,23)),"next/dist/client/components/unauthorized-error"],metadata:{icon:[async e=>(await Promise.resolve().then(r.bind(r,8162))).default(e)],apple:[],openGraph:[],twitter:[],manifest:void 0}}],p=["C:\\Users\\gabri\\fruit-bridge-global\\src\\app\\team\\page.tsx"],x={require:r,loadChunk:()=>Promise.resolve()},c=new a.AppPageRouteModule({definition:{kind:s.RouteKind.APP_PAGE,page:"/team/page",pathname:"/team",bundlePath:"",filename:"",appPaths:[]},userland:{loaderTree:d}})},7659:(e,t,r)=>{Promise.resolve().then(r.bind(r,9613))},7331:(e,t,r)=>{Promise.resolve().then(r.bind(r,625))},625:(e,t,r)=>{"use strict";r.r(t),r.d(t,{default:()=>o});var a=r(5512),s=r(9187),i=r(5972);let n={initial:{opacity:0,y:30},whileInView:{opacity:1,y:0},viewport:{once:!0},transition:{duration:.7,ease:[.22,1,.36,1]}};function o(){let{t:e}=(0,i.B)();return(0,a.jsxs)("div",{className:"pt-32 pb-24 lg:pt-40 lg:pb-32",children:[(0,a.jsxs)("div",{className:"mx-auto max-w-5xl px-6 lg:px-12 mb-24",children:[(0,a.jsx)(s.P.div,{initial:{opacity:0,width:0},animate:{opacity:1,width:"5rem"},transition:{duration:.8},className:"h-0.5 bg-gold mb-10"}),(0,a.jsx)(s.P.h1,{initial:{opacity:0,y:40},animate:{opacity:1,y:0},transition:{duration:.8,delay:.1},className:"font-serif text-4xl lg:text-6xl font-light text-foreground mb-6",children:e.teamPage.title}),(0,a.jsx)(s.P.p,{...n,transition:{...n.transition,delay:.2},className:"text-lg text-muted-foreground leading-relaxed font-light max-w-2xl",children:e.teamPage.intro})]}),(0,a.jsx)("div",{className:"mx-auto max-w-6xl px-6 lg:px-12 space-y-0",children:e.teamPage.sections.map((e,t)=>{let r=t%2==0;return(0,a.jsxs)(s.P.div,{...n,transition:{...n.transition,delay:.1*t},className:`flex flex-col lg:flex-row items-stretch border-b border-border ${r?"":"lg:flex-row-reverse"}`,children:[(0,a.jsx)("div",{className:"lg:w-2/5 bg-secondary flex items-center justify-center p-12 lg:p-16",children:(0,a.jsxs)("div",{className:"text-center",children:[(0,a.jsx)("span",{className:"block font-serif text-7xl lg:text-8xl font-light text-primary/20",children:String(t+1).padStart(2,"0")}),(0,a.jsx)("h2",{className:"mt-4 font-serif text-xl lg:text-2xl font-medium text-foreground tracking-tight",children:e.title})]})}),(0,a.jsx)("div",{className:"lg:w-3/5 flex items-center p-10 lg:p-16",children:(0,a.jsx)("p",{className:"text-foreground/75 text-base lg:text-lg leading-[1.9] font-light",children:e.text})})]},t)})}),(0,a.jsx)(s.P.div,{...n,className:"mx-auto max-w-6xl px-6 lg:px-12 mt-20",children:(0,a.jsx)("div",{className:"h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent"})})]})}},9613:(e,t,r)=>{"use strict";r.r(t),r.d(t,{default:()=>a});let a=(0,r(6760).registerClientReference)(function(){throw Error("Attempted to call the default export of \"C:\\\\Users\\\\gabri\\\\fruit-bridge-global\\\\src\\\\app\\\\team\\\\page.tsx\" from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.")},"C:\\Users\\gabri\\fruit-bridge-global\\src\\app\\team\\page.tsx","default")},8162:(e,t,r)=>{"use strict";r.r(t),r.d(t,{default:()=>s});var a=r(8077);let s=async e=>[{type:"image/png",sizes:"502x497",url:(0,a.fillMetadataSegment)(".",await e.params,"icon.png")+"?e65eaff8f9abf9fc"}]}};var t=require("../../webpack-runtime.js");t.C(e);var r=e=>t(t.s=e),a=t.X(0,[638,237,77,210],()=>r(4779));module.exports=a})();
+(() => {
+  var e = {};
+  ((e.id = 898),
+    (e.ids = [898]),
+    (e.modules = {
+      846: (e) => {
+        "use strict";
+        e.exports = require("next/dist/compiled/next-server/app-page.runtime.prod.js");
+      },
+      9121: (e) => {
+        "use strict";
+        e.exports = require("next/dist/server/app-render/action-async-storage.external.js");
+      },
+      3295: (e) => {
+        "use strict";
+        e.exports = require("next/dist/server/app-render/after-task-async-storage.external.js");
+      },
+      9294: (e) => {
+        "use strict";
+        e.exports = require("next/dist/server/app-render/work-async-storage.external.js");
+      },
+      3033: (e) => {
+        "use strict";
+        e.exports = require("next/dist/server/app-render/work-unit-async-storage.external.js");
+      },
+      3873: (e) => {
+        "use strict";
+        e.exports = require("path");
+      },
+      9551: (e) => {
+        "use strict";
+        e.exports = require("url");
+      },
+      4779: (e, t, r) => {
+        "use strict";
+        (r.r(t),
+          r.d(t, {
+            GlobalError: () => n.a,
+            __next_app__: () => x,
+            pages: () => p,
+            routeModule: () => c,
+            tree: () => d,
+          }));
+        var a = r(260),
+          s = r(8203),
+          i = r(5155),
+          n = r.n(i),
+          o = r(7292),
+          l = {};
+        for (let e in o)
+          0 >
+            ["default", "tree", "pages", "GlobalError", "__next_app__", "routeModule"].indexOf(e) &&
+            (l[e] = () => o[e]);
+        r.d(t, l);
+        let d = [
+            "",
+            {
+              children: [
+                "team",
+                {
+                  children: [
+                    "__PAGE__",
+                    {},
+                    {
+                      page: [
+                        () => Promise.resolve().then(r.bind(r, 9613)),
+                        "C:\\Users\\gabri\\fruit-bridge-global\\src\\app\\team\\page.tsx",
+                      ],
+                    },
+                  ],
+                },
+                {
+                  metadata: {
+                    icon: [async (e) => (await Promise.resolve().then(r.bind(r, 8162))).default(e)],
+                    apple: [],
+                    openGraph: [],
+                    twitter: [],
+                    manifest: void 0,
+                  },
+                },
+              ],
+            },
+            {
+              layout: [
+                () => Promise.resolve().then(r.bind(r, 1354)),
+                "C:\\Users\\gabri\\fruit-bridge-global\\src\\app\\layout.tsx",
+              ],
+              "not-found": [
+                () => Promise.resolve().then(r.t.bind(r, 9937, 23)),
+                "next/dist/client/components/not-found-error",
+              ],
+              forbidden: [
+                () => Promise.resolve().then(r.t.bind(r, 9116, 23)),
+                "next/dist/client/components/forbidden-error",
+              ],
+              unauthorized: [
+                () => Promise.resolve().then(r.t.bind(r, 1485, 23)),
+                "next/dist/client/components/unauthorized-error",
+              ],
+              metadata: {
+                icon: [async (e) => (await Promise.resolve().then(r.bind(r, 8162))).default(e)],
+                apple: [],
+                openGraph: [],
+                twitter: [],
+                manifest: void 0,
+              },
+            },
+          ],
+          p = ["C:\\Users\\gabri\\fruit-bridge-global\\src\\app\\team\\page.tsx"],
+          x = { require: r, loadChunk: () => Promise.resolve() },
+          c = new a.AppPageRouteModule({
+            definition: {
+              kind: s.RouteKind.APP_PAGE,
+              page: "/team/page",
+              pathname: "/team",
+              bundlePath: "",
+              filename: "",
+              appPaths: [],
+            },
+            userland: { loaderTree: d },
+          });
+      },
+      7659: (e, t, r) => {
+        Promise.resolve().then(r.bind(r, 9613));
+      },
+      7331: (e, t, r) => {
+        Promise.resolve().then(r.bind(r, 625));
+      },
+      625: (e, t, r) => {
+        "use strict";
+        (r.r(t), r.d(t, { default: () => o }));
+        var a = r(5512),
+          s = r(9187),
+          i = r(5972);
+        let n = {
+          initial: { opacity: 0, y: 30 },
+          whileInView: { opacity: 1, y: 0 },
+          viewport: { once: !0 },
+          transition: { duration: 0.7, ease: [0.22, 1, 0.36, 1] },
+        };
+        function o() {
+          let { t: e } = (0, i.B)();
+          return (0, a.jsxs)("div", {
+            className: "pt-32 pb-24 lg:pt-40 lg:pb-32",
+            children: [
+              (0, a.jsxs)("div", {
+                className: "mx-auto max-w-5xl px-6 lg:px-12 mb-24",
+                children: [
+                  (0, a.jsx)(s.P.div, {
+                    initial: { opacity: 0, width: 0 },
+                    animate: { opacity: 1, width: "5rem" },
+                    transition: { duration: 0.8 },
+                    className: "h-0.5 bg-gold mb-10",
+                  }),
+                  (0, a.jsx)(s.P.h1, {
+                    initial: { opacity: 0, y: 40 },
+                    animate: { opacity: 1, y: 0 },
+                    transition: { duration: 0.8, delay: 0.1 },
+                    className: "font-serif text-4xl lg:text-6xl font-light text-foreground mb-6",
+                    children: e.teamPage.title,
+                  }),
+                  (0, a.jsx)(s.P.p, {
+                    ...n,
+                    transition: { ...n.transition, delay: 0.2 },
+                    className: "text-lg text-muted-foreground leading-relaxed font-light max-w-2xl",
+                    children: e.teamPage.intro,
+                  }),
+                ],
+              }),
+              (0, a.jsx)("div", {
+                className: "mx-auto max-w-6xl px-6 lg:px-12 space-y-0",
+                children: e.teamPage.sections.map((e, t) => {
+                  let r = t % 2 == 0;
+                  return (0, a.jsxs)(
+                    s.P.div,
+                    {
+                      ...n,
+                      transition: { ...n.transition, delay: 0.1 * t },
+                      className: `flex flex-col lg:flex-row items-stretch border-b border-border ${r ? "" : "lg:flex-row-reverse"}`,
+                      children: [
+                        (0, a.jsx)("div", {
+                          className:
+                            "lg:w-2/5 bg-secondary flex items-center justify-center p-12 lg:p-16",
+                          children: (0, a.jsxs)("div", {
+                            className: "text-center",
+                            children: [
+                              (0, a.jsx)("span", {
+                                className:
+                                  "block font-serif text-7xl lg:text-8xl font-light text-primary/20",
+                                children: String(t + 1).padStart(2, "0"),
+                              }),
+                              (0, a.jsx)("h2", {
+                                className:
+                                  "mt-4 font-serif text-xl lg:text-2xl font-medium text-foreground tracking-tight",
+                                children: e.title,
+                              }),
+                            ],
+                          }),
+                        }),
+                        (0, a.jsx)("div", {
+                          className: "lg:w-3/5 flex items-center p-10 lg:p-16",
+                          children: (0, a.jsx)("p", {
+                            className:
+                              "text-foreground/75 text-base lg:text-lg leading-[1.9] font-light",
+                            children: e.text,
+                          }),
+                        }),
+                      ],
+                    },
+                    t,
+                  );
+                }),
+              }),
+              (0, a.jsx)(s.P.div, {
+                ...n,
+                className: "mx-auto max-w-6xl px-6 lg:px-12 mt-20",
+                children: (0, a.jsx)("div", {
+                  className: "h-px bg-gradient-to-r from-transparent via-gold/40 to-transparent",
+                }),
+              }),
+            ],
+          });
+        }
+      },
+      9613: (e, t, r) => {
+        "use strict";
+        (r.r(t), r.d(t, { default: () => a }));
+        let a = (0, r(6760).registerClientReference)(
+          function () {
+            throw Error(
+              "Attempted to call the default export of \"C:\\\\Users\\\\gabri\\\\fruit-bridge-global\\\\src\\\\app\\\\team\\\\page.tsx\" from the server, but it's on the client. It's not possible to invoke a client function from the server, it can only be rendered as a Component or passed to props of a Client Component.",
+            );
+          },
+          "C:\\Users\\gabri\\fruit-bridge-global\\src\\app\\team\\page.tsx",
+          "default",
+        );
+      },
+      8162: (e, t, r) => {
+        "use strict";
+        (r.r(t), r.d(t, { default: () => s }));
+        var a = r(8077);
+        let s = async (e) => [
+          {
+            type: "image/png",
+            sizes: "502x497",
+            url: (0, a.fillMetadataSegment)(".", await e.params, "icon.png") + "?e65eaff8f9abf9fc",
+          },
+        ];
+      },
+    }));
+  var t = require("../../webpack-runtime.js");
+  t.C(e);
+  var r = (e) => t((t.s = e)),
+    a = t.X(0, [638, 237, 77, 210], () => r(4779));
+  module.exports = a;
+})();
