@@ -63,9 +63,7 @@ export default function HistoryPage() {
                       {p}
                     </blockquote>
                   ) : (
-                    <p className="text-lg text-foreground/75 leading-relaxed font-light">
-                      {p}
-                    </p>
+                    <p className="text-lg text-foreground/75 leading-relaxed font-light">{p}</p>
                   )}
                 </motion.div>
               );

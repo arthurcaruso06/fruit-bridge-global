@@ -61,10 +61,7 @@ export default function SasPage() {
       </div>
 
       {/* Endereço */}
-      <motion.div
-        {...fadeUp}
-        className="mx-auto max-w-3xl px-6 lg:px-12 mt-20"
-      >
+      <motion.div {...fadeUp} className="mx-auto max-w-3xl px-6 lg:px-12 mt-20">
         <div className="h-px bg-gradient-to-r from-transparent via-primary/30 to-transparent mb-12" />
         <div className="text-center">
           <h3 className="text-xs font-medium tracking-[0.2em] uppercase text-muted-foreground mb-4">

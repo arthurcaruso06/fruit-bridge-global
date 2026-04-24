@@ -39,16 +39,26 @@ export default function ContactPage() {
           <div className="p-8 lg:p-10 border border-border bg-card hover:border-primary/30 transition-all duration-500">
             <span className="text-2xl mb-4 block">📞</span>
             <h3 className="text-xs font-medium tracking-[0.2em] uppercase text-primary/60 mb-4">
-              {t.contactPage.title === 'Contatos' ? 'Telefone' : t.contactPage.title === 'Contact' ? 'Phone' : 'Teléfono'}
+              {t.contactPage.title === "Contatos"
+                ? "Telefone"
+                : t.contactPage.title === "Contact"
+                  ? "Phone"
+                  : "Teléfono"}
             </h3>
             <p className="text-lg text-foreground font-light">{t.contactPage.phone}</p>
           </div>
           <div className="p-8 lg:p-10 border border-border bg-card hover:border-primary/30 transition-all duration-500">
             <span className="text-2xl mb-4 block">📍</span>
             <h3 className="text-xs font-medium tracking-[0.2em] uppercase text-primary/60 mb-4">
-              {t.contactPage.title === 'Contatos' ? 'Endereço' : t.contactPage.title === 'Contact' ? 'Address' : 'Dirección'}
+              {t.contactPage.title === "Contatos"
+                ? "Endereço"
+                : t.contactPage.title === "Contact"
+                  ? "Address"
+                  : "Dirección"}
             </h3>
-            <p className="text-foreground/80 whitespace-pre-line leading-relaxed font-light">{t.contactPage.address}</p>
+            <p className="text-foreground/80 whitespace-pre-line leading-relaxed font-light">
+              {t.contactPage.address}
+            </p>
           </div>
         </motion.div>
       </div>
@@ -72,7 +82,10 @@ export default function ContactPage() {
             >
               <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center mb-4">
                 <span className="text-primary font-serif text-sm font-medium">
-                  {c.name.split(' ').map(n => n[0]).join('')}
+                  {c.name
+                    .split(" ")
+                    .map((n) => n[0])
+                    .join("")}
                 </span>
               </div>
               <h3 className="font-medium text-foreground mb-3">{c.name}</h3>
@@ -84,7 +97,7 @@ export default function ContactPage() {
                   {c.email}
                 </a>
                 <a
-                  href={`tel:${c.phone.replace(/\s/g, '')}`}
+                  href={`tel:${c.phone.replace(/\s/g, "")}`}
                   className="block text-muted-foreground hover:text-foreground transition-colors"
                 >
                   {c.phone}

@@ -6,22 +6,17 @@ import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Viva Frutas — Trading Internacional de Frutas",
-  description: "Representamos produtores globais e garantimos qualidade na chegada, conectando origem e mercado com precisão.",
+  description:
+    "Representamos produtores globais e garantimos qualidade na chegada, conectando origem e mercado com precisão.",
 };
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="pt">
       <body>
         <LanguageProvider>
           <Header />
-          <main>
-            {children}
-          </main>
+          <main>{children}</main>
           <Footer />
         </LanguageProvider>
       </body>

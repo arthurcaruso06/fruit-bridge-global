@@ -1,4 +1,9 @@
 {
   "/icon.png/route": "app/icon.png/route.js",
-  "/page": "app/page.js"
+  "/_not-found/page": "app/_not-found/page.js",
+  "/contact/page": "app/contact/page.js",
+  "/history/page": "app/history/page.js",
+  "/sas/page": "app/sas/page.js",
+  "/page": "app/page.js",
+  "/team/page": "app/team/page.js"
 }
