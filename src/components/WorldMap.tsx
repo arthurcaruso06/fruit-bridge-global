@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { worldMapPath } from "./worldMapPath";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 // Equirectangular: x=(lon+180)/360*900, y=(90-lat)/180*500
 const brazil = { x: 333.5, y: 315.3 };
@@ -17,6 +18,7 @@ const countries = [
 ];
 
 export function WorldMap() {
+  const isMobile = useIsMobile();
   return (
     <div className="relative w-full max-w-5xl mx-auto">
       <svg viewBox="30 50 870 420" className="w-full">
@@ -131,7 +133,7 @@ export function WorldMap() {
               stroke="currentColor"
               strokeWidth="0.5"
               initial={{ scale: 1, opacity: 0.4 }}
-              animate={{ scale: [1, 2.8], opacity: [0.4, 0] }}
+              animate={isMobile ? undefined : { scale: [1, 2.8], opacity: [0.4, 0] }}
               transition={{ duration: 2.5, repeat: Infinity, delay: i * 0.35, ease: "easeOut" }}
             />
             <text

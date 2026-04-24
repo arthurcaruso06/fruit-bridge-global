@@ -8,6 +8,7 @@ import heroImg from "@/assets/hero-port.jpg";
 import fruitsImg from "@/assets/fruits-premium.png";
 import sasLogo from "@/assets/vivafruta-sas-logo.png";
 import { LogoCarousel } from "@/components/LogoCarousel";
+import { useIsMobile } from "@/hooks/use-mobile";
 
 const fadeUp = {
   initial: { opacity: 0, y: 30 } as const,
@@ -110,6 +111,7 @@ function HeroSection() {
 
 function AboutSection() {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   return (
     <section className="py-24 lg:py-32 overflow-hidden relative">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
@@ -133,7 +135,7 @@ function AboutSection() {
             {/* Decorative background glow to link with aesthetics */}
             <motion.div
               className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[100%] aspect-square rounded-full bg-primary/5 blur-3xl pointer-events-none"
-              animate={{
+              animate={isMobile ? undefined : {
                 scale: [1, 1.05, 1],
                 opacity: [0.5, 0.8, 0.5],
               }}
@@ -149,7 +151,7 @@ function AboutSection() {
               src={fruitsImg.src}
               alt="Fresh fruits"
               className="w-full h-auto max-h-[600px] object-contain mix-blend-multiply relative z-10"
-              animate={{
+              animate={isMobile ? undefined : {
                 y: [0, -20, 0],
                 rotate: [0, 2, -1, 0],
               }}
