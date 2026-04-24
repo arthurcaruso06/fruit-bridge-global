@@ -1,4 +1,7 @@
-import { Link, useLocation } from '@tanstack/react-router';
+"use client";
+
+import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 import { useTranslation } from '@/i18n/LanguageContext';
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -14,24 +17,41 @@ const langs: { code: Language; label: string }[] = [
 export function Header() {
   const { language, setLanguage, t } = useTranslation();
   const [scrolled, setScrolled] = useState(false);
+  const [hidden, setHidden] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
-  const location = useLocation();
-  const isHome = location.pathname === '/';
+  const pathname = usePathname();
+  const isHome = pathname === '/';
 
   useEffect(() => {
-    const onScroll = () => setScrolled(window.scrollY > 60);
+    let lastScrollY = window.scrollY;
+
+    const onScroll = () => {
+      const currentScrollY = window.scrollY;
+      
+      setScrolled(currentScrollY > 60);
+
+      // Hide navbar when scrolling down past 100px, show when scrolling up
+      if (currentScrollY > lastScrollY && currentScrollY > 100 && !mobileOpen) {
+        setHidden(true);
+      } else if (currentScrollY < lastScrollY || currentScrollY <= 100) {
+        setHidden(false);
+      }
+
+      lastScrollY = currentScrollY;
+    };
+
     window.addEventListener('scroll', onScroll, { passive: true });
     return () => window.removeEventListener('scroll', onScroll);
-  }, []);
+  }, [mobileOpen]);
 
-  useEffect(() => setMobileOpen(false), [location.pathname]);
+  useEffect(() => setMobileOpen(false), [pathname]);
 
   const navLinks = [
-    { to: '/' as const, label: t.nav.home },
-    { to: '/history' as const, label: t.nav.history },
-    { to: '/team' as const, label: t.nav.team },
-    { to: '/sas' as const, label: t.nav.sas },
-    { to: '/contact' as const, label: t.nav.contact },
+    { href: '/', label: t.nav.home },
+    { href: '/history', label: t.nav.history },
+    { href: '/team', label: t.nav.team },
+    { href: '/sas', label: t.nav.sas },
+    { href: '/contact', label: t.nav.contact },
   ];
 
   const headerBg = scrolled || !isHome || mobileOpen
@@ -43,21 +63,19 @@ export function Header() {
     : 'text-primary-foreground';
 
   return (
-    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${headerBg}`}>
+    <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ease-in-out ${headerBg} ${hidden ? '-translate-y-full' : 'translate-y-0'}`}>
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
         <div className="flex h-20 items-center justify-between">
-          <Link to="/" className="flex items-center transition-colors">
-            <img src={logoImg} alt="Viva Fruta" className={`h-14 w-auto transition-all duration-500 ${scrolled || !isHome ? '' : 'brightness-0 invert'}`} />
+          <Link href="/" className="flex items-center transition-colors">
+            <img src={logoImg.src} alt="Viva Fruta" className={`h-14 w-auto transition-all duration-500 ${scrolled || !isHome ? '' : 'brightness-0 invert'}`} />
           </Link>
 
           <nav className="hidden lg:flex items-center gap-10">
             {navLinks.map((link) => (
               <Link
-                key={link.to}
-                to={link.to}
-                className={`text-sm font-medium tracking-wide transition-colors hover:opacity-70 ${textColor}`}
-                activeProps={{ className: '!opacity-100 border-b border-current' }}
-                activeOptions={{ exact: true }}
+                key={link.href}
+                href={link.href}
+                className={`text-sm font-medium tracking-wide transition-colors hover:opacity-70 ${textColor} ${pathname === link.href ? '!opacity-100 border-b border-current' : ''}`}
               >
                 {link.label}
               </Link>
@@ -107,11 +125,9 @@ export function Header() {
             <div className="px-6 py-8 flex flex-col gap-6">
               {navLinks.map((link) => (
                 <Link
-                  key={link.to}
-                  to={link.to}
-                  className="text-foreground text-lg font-serif tracking-wide"
-                  activeProps={{ className: 'text-primary' }}
-                  activeOptions={{ exact: true }}
+                  key={link.href}
+                  href={link.href}
+                  className={`text-foreground text-lg font-serif tracking-wide ${pathname === link.href ? 'text-primary' : ''}`}
                 >
                   {link.label}
                 </Link>

@@ -1,4 +1,6 @@
-import { Link } from '@tanstack/react-router';
+"use client";
+
+import Link from 'next/link';
 import { useTranslation } from '@/i18n/LanguageContext';
 import logoImg from '@/assets/logo-viva-fruta.png';
 
@@ -10,7 +12,7 @@ export function Footer() {
       <div className="mx-auto max-w-7xl px-6 lg:px-12 py-16 lg:py-20">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12 lg:gap-16">
           <div>
-            <img src={logoImg} alt="Viva Fruta" className="h-16 w-auto brightness-0 invert" />
+            <img src={logoImg.src} alt="Viva Fruta" className="h-16 w-auto brightness-0 invert" />
             <p className="mt-4 text-sm text-primary-foreground/60 leading-relaxed max-w-xs">
               {t.footer.tagline}
             </p>
@@ -21,11 +23,11 @@ export function Footer() {
               {t.nav.home === 'Home' ? 'Navigation' : t.nav.home === 'Inicio' ? 'Navegación' : 'Navegação'}
             </h4>
             <nav className="flex flex-col gap-3">
-              <Link to="/" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">{t.nav.home}</Link>
-              <Link to="/history" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">{t.nav.history}</Link>
-              <Link to="/team" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">{t.nav.team}</Link>
-              <Link to="/sas" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">{t.nav.sas}</Link>
-              <Link to="/contact" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">{t.nav.contact}</Link>
+              <Link href="/" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">{t.nav.home}</Link>
+              <Link href="/history" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">{t.nav.history}</Link>
+              <Link href="/team" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">{t.nav.team}</Link>
+              <Link href="/sas" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">{t.nav.sas}</Link>
+              <Link href="/contact" className="text-sm text-primary-foreground/70 hover:text-primary-foreground transition-colors">{t.nav.contact}</Link>
             </nav>
           </div>
 

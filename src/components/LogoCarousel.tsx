@@ -1,3 +1,5 @@
+"use client";
+
 import { motion } from "framer-motion";
 import frutariaLogo from "@/assets/logos/frutaria.jpeg";
 import fruitsDePonentLogo from "@/assets/logos/fruits-de-ponent.jpeg";
@@ -6,15 +8,21 @@ import chilfreshLogo from "@/assets/logos/chilfresh.jpeg";
 import novafruitLogo from "@/assets/logos/novafruit.png";
 import frueatLogo from "@/assets/logos/frueat.png";
 import novacoopLogo from "@/assets/logos/novacoop.png";
+import cleeLogo from "@/assets/logos/clee-logo.jpeg";
+import agrolandLogo from "@/assets/logos/agroland-logo.jpeg";
+import propalLogo from "@/assets/logos/propal-logo.jpeg";
 
 const logos = [
-  { src: frutariaLogo, alt: "Frutaria" },
-  { src: fruitsDePonentLogo, alt: "Fruits de Ponent" },
-  { src: zhenhaiLogo, alt: "Zhenhai" },
-  { src: chilfreshLogo, alt: "Chilfresh" },
-  { src: novafruitLogo, alt: "Novafruit Italia" },
-  { src: frueatLogo, alt: "Frueat by Moudiris" },
-  { src: novacoopLogo, alt: "Novacoop Mediterranea" },
+  { src: frutariaLogo.src, alt: "Frutaria" },
+  { src: fruitsDePonentLogo.src, alt: "Fruits de Ponent" },
+  { src: zhenhaiLogo.src, alt: "Zhenhai" },
+  { src: chilfreshLogo.src, alt: "Chilfresh" },
+  { src: novafruitLogo.src, alt: "Novafruit Italia" },
+  { src: frueatLogo.src, alt: "Frueat by Moudiris" },
+  { src: novacoopLogo.src, alt: "Novacoop Mediterranea" },
+  { src: cleeLogo.src, alt: "Clee" },
+  { src: agrolandLogo.src, alt: "Agroland" },
+  { src: propalLogo.src, alt: "Propal" },
 ];
 
 // Duplicate for seamless loop
@@ -28,7 +36,7 @@ export function LogoCarousel() {
       <div className="absolute right-0 top-0 bottom-0 w-24 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none" />
 
       <motion.div
-        className="flex items-center gap-16"
+        className="flex w-max items-center gap-16"
         animate={{ x: ["0%", "-50%"] }}
         transition={{
           x: {
