@@ -181,6 +181,7 @@ function AboutSection() {
 
 function ProcessSection() {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   return (
     <section className="py-24 lg:py-32 bg-secondary">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
@@ -196,7 +197,8 @@ function ProcessSection() {
               key={step.number}
               {...fadeUp}
               transition={{ ...fadeUp.transition, delay: i * 0.1 }}
-              className="relative bg-card border border-border p-6 hover:shadow-lg hover:-translate-y-1 transition-all duration-300 group"
+              whileHover={!isMobile ? { y: -4, transition: { duration: 0.3 } } : undefined}
+              className="relative bg-card border border-border p-6 hover:shadow-lg transition-shadow duration-300 group will-change-[transform,opacity]"
             >
               <span className="text-6xl font-serif font-light text-primary/15 group-hover:text-primary/30 transition-colors absolute top-3 right-4">
                 {step.number}
@@ -225,6 +227,7 @@ function ProcessSection() {
 
 function DifferentialsSection() {
   const { t } = useTranslation();
+  const isMobile = useIsMobile();
   return (
     <section className="py-24 lg:py-32 bg-background">
       <div className="mx-auto max-w-7xl px-6 lg:px-12">
@@ -240,7 +243,8 @@ function DifferentialsSection() {
               key={i}
               {...fadeUp}
               transition={{ ...fadeUp.transition, delay: i * 0.08 }}
-              className="group relative p-8 bg-card border border-border hover:border-primary/40 hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden"
+              whileHover={!isMobile ? { y: -4, transition: { duration: 0.3 } } : undefined}
+              className="group relative p-8 bg-card border border-border hover:border-primary/40 hover:shadow-xl transition-[box-shadow,border-color] duration-300 overflow-hidden will-change-[transform,opacity]"
             >
               <span className="absolute top-4 right-5 text-5xl font-serif font-light text-primary/8 group-hover:text-primary/15 transition-colors">
                 {String(i + 1).padStart(2, "0")}
