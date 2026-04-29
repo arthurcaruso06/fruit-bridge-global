@@ -13,6 +13,7 @@ interface Contact {
   name: string;
   email: string;
   phone: string;
+  department: string;
 }
 
 export interface TranslationSet {
@@ -55,15 +56,15 @@ export interface TranslationSet {
 }
 
 const contacts: Contact[] = [
-  { name: "André Schenk", email: "andre@vivafruta.com.br", phone: "+55 11 98178-4445" },
-  { name: "Rosana Melo", email: "rosana@vivafruta.com.br", phone: "+55 11 99403-5089" },
-  { name: "Eduardo Tomazian", email: "eduardo@vivafruta.com.br", phone: "+55 11 94242-4445" },
-  { name: "Marcio Nascimento", email: "marcio@vivafruta.com.br", phone: "+55 11 97278-4445" },
-  { name: "Karina Luiza", email: "karina@vivafruta.com.br", phone: "+55 11 93484-4445" },
-  { name: "Daniel da Silva", email: "daniel@vivafruta.com.br", phone: "+55 11 97190-4445" },
-  { name: "Letícia Piassi", email: "leticia@vivafruta.com.br", phone: "+55 11 97470-4445" },
-  { name: "Roberta Leme", email: "roberta@vivafruta.com.br", phone: "+55 11 98444-9729" },
-  { name: "Jefferson Ramos", email: "jefferson@vivafruta.com.br", phone: "+55 11 91663-4445" },
+  { name: "André Schenk", email: "andre@vivafruta.com.br", phone: "+55 11 98178-4445", department: "CO" },
+  { name: "Rosana Melo", email: "rosana@vivafruta.com.br", phone: "+55 11 99403-5089", department: "Controler" },
+  { name: "Eduardo Tomazian", email: "eduardo@vivafruta.com.br", phone: "+55 11 94242-4445", department: "Comercial" },
+  { name: "Marcio Nascimento", email: "marcio@vivafruta.com.br", phone: "+55 11 97278-4445", department: "Qualidade" },
+  { name: "Karina Luiza", email: "karina@vivafruta.com.br", phone: "+55 11 93484-4445", department: "Operacional" },
+  { name: "Daniel da Silva", email: "daniel@vivafruta.com.br", phone: "+55 11 97190-4445", department: "Qualidade" },
+  { name: "Letícia Piassi", email: "leticia@vivafruta.com.br", phone: "+55 11 97470-4445", department: "Operacional" },
+  { name: "Roberta Leme", email: "roberta@vivafruta.com.br", phone: "+55 11 98444-9729", department: "Financeiro" },
+  { name: "Jefferson Ramos", email: "jefferson@vivafruta.com.br", phone: "+55 11 91663-4445", department: "Qualidade" },
 ];
 
 const partners = {

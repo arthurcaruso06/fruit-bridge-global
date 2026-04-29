@@ -88,7 +88,10 @@ export default function ContactPage() {
                     .join("")}
                 </span>
               </div>
-              <h3 className="font-medium text-foreground mb-3">{c.name}</h3>
+              <h3 className="font-medium text-foreground mb-1">{c.name}</h3>
+              <p className="text-xs font-medium tracking-wide uppercase text-primary/60 mb-3">
+                {c.department}
+              </p>
               <div className="space-y-2 text-sm">
                 <a
                   href={`mailto:${c.email}`}
