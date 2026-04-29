@@ -280,13 +280,18 @@ function GlobalSection() {
   ];
 
   const origins = [
-    { country: "Chile", flag: "🇨🇱", products: "Uvas, Cerejas, Ameixas" },
-    { country: "Argentina", flag: "🇦🇷", products: "Peras, Maçãs, Limões" },
-    { country: "EUA", flag: "🇺🇸", products: "Maçãs, Cerejas" },
-    { country: "Espanha", flag: "🇪🇸", products: "Citros, Caquis" },
-    { country: "Itália", flag: "🇮🇹", products: "Kiwis, Uvas" },
-    { country: "África do Sul", flag: "🇿🇦", products: "Citros, Uvas" },
-    { country: "China", flag: "🇨🇳", products: "Peras, Alho" },
+    { country: "Chile", flag: "🇨🇱", products: "Uva, Cereja, Caroço, Maçã, Kiwi" },
+    { country: "Argentina", flag: "🇦🇷", products: "Citrus, Maçã, Pera, Mirtilo" },
+    { country: "Peru", flag: "🇵🇪", products: "Uva" },
+    { country: "EUA", flag: "🇺🇸", products: "Cereja" },
+    { country: "Portugal", flag: "🇵🇹", products: "Maçã, Pera" },
+    { country: "Espanha", flag: "🇪🇸", products: "Citros, Caroço, Romã, Kiwi" },
+    { country: "França", flag: "🇫🇷", products: "Maçã" },
+    { country: "Holanda", flag: "🇳🇱", products: "Melão" },
+    { country: "Itália", flag: "🇮🇹", products: "Kiwi, Maçã" },
+    { country: "Grécia", flag: "🇬🇷", products: "Kiwi" },
+    { country: "Egito", flag: "🇪🇬", products: "Citros e Alho" },
+    { country: "China", flag: "🇨🇳", products: "Alho e Pera" },
   ];
 
   return (

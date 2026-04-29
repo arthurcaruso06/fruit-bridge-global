@@ -11,9 +11,14 @@ const countries = [
   { name: "USA", x: 151.5, y: 147.8, label: "EUA" },
   { name: "Chile", x: 273.2, y: 342.8, label: "Chile" },
   { name: "Argentina", x: 304.0, y: 346.1, label: "Argentina" },
+  { name: "Peru", x: 262.5, y: 275.0, label: "Peru" },
   { name: "Spain", x: 440.8, y: 137.8, label: "Espanha" },
+  { name: "Portugal", x: 430.0, y: 141.6, label: "Portugal" },
+  { name: "France", x: 455.0, y: 122.2, label: "França" },
+  { name: "Netherlands", x: 462.5, y: 105.5, label: "Holanda" },
   { name: "Italy", x: 481.2, y: 133.6, label: "Itália" },
-  { name: "South Africa", x: 496.0, y: 344.2, label: "Á. do Sul" },
+  { name: "Greece", x: 505.0, y: 141.6, label: "Grécia" },
+  { name: "Egypt", x: 525.0, y: 177.7, label: "Egito" },
   { name: "China", x: 741.0, y: 139.2, label: "China" },
 ];
 
