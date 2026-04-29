@@ -77,7 +77,6 @@ const partners = {
     "Exportadora Propal SA",
     "Frueat by Moudiris",
     "Fruilomar",
-    "Fruits De Ponent",
     "Frutaria",
     "Los Lirios",
     "Luis Vicente",

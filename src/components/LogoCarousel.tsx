@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import frutariaLogo from "@/assets/logos/frutaria.jpeg";
-import fruitsDePonentLogo from "@/assets/logos/fruits-de-ponent.jpeg";
 import zhenhaiLogo from "@/assets/logos/zhenhai.jpeg";
 import chilfreshLogo from "@/assets/logos/chilfresh.jpeg";
 import novafruitLogo from "@/assets/logos/novafruit.png";
@@ -14,7 +13,6 @@ import propalLogo from "@/assets/logos/propal-logo.jpeg";
 
 const logos = [
   { src: frutariaLogo.src, alt: "Frutaria" },
-  { src: fruitsDePonentLogo.src, alt: "Fruits de Ponent" },
   { src: zhenhaiLogo.src, alt: "Zhenhai" },
   { src: chilfreshLogo.src, alt: "Chilfresh" },
   { src: novafruitLogo.src, alt: "Novafruit Italia" },
