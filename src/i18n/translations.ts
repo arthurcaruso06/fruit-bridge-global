@@ -110,7 +110,7 @@ const pt: TranslationSet = {
   },
   about: {
     title: "Sobre",
-    text: "Empresa fundada em São Paulo, a Viva Frutas é referência em comércio internacional de frutas frescas. Atuamos com representação comercial estratégica e controle rigoroso de qualidade, conectando produtores globais ao mercado com agilidade e valor agregado.",
+    text: "Empresa fundada em São Paulo, a Viva Fruta é referência em comércio internacional de frutas frescas. Atuamos com representação comercial estratégica e controle rigoroso de qualidade, conectando produtores globais ao mercado com agilidade e valor agregado.",
   },
   process: {
     title: "Como Trabalhamos",
@@ -244,7 +244,7 @@ const en: TranslationSet = {
   },
   about: {
     title: "About",
-    text: "Founded in São Paulo, Viva Frutas is a reference in international fresh fruit trading. We operate with strategic commercial representation and rigorous quality control, connecting global producers to the market with agility and added value.",
+    text: "Founded in São Paulo, Viva Fruta is a reference in international fresh fruit trading. We operate with strategic commercial representation and rigorous quality control, connecting global producers to the market with agility and added value.",
   },
   process: {
     title: "How We Work",
@@ -375,7 +375,7 @@ const es: TranslationSet = {
   },
   about: {
     title: "Sobre",
-    text: "Empresa fundada en São Paulo, Viva Frutas es referencia en comercio internacional de frutas frescas. Actuamos con representación comercial estratégica y control riguroso de calidad, conectando productores globales al mercado con agilidad y valor agregado.",
+    text: "Empresa fundada en São Paulo, Viva Fruta es referencia en comercio internacional de frutas frescas. Actuamos con representación comercial estratégica y control riguroso de calidad, conectando productores globales al mercado con agilidad y valor agregado.",
   },
   process: {
     title: "Cómo Trabajamos",
