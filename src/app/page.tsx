@@ -281,13 +281,13 @@ function GlobalSection() {
 
   const origins = [
     { country: "Chile", flag: "🇨🇱", products: "Uva, Cereja, Caroço, Maçã, Kiwi" },
-    { country: "Argentina", flag: "🇦🇷", products: "Citrus, Maçã, Pera, Mirtilo" },
+    { country: "Argentina", flag: "🇦🇷", products: "Citros, Maçã, Pera, Mirtilo" },
     { country: "Peru", flag: "🇵🇪", products: "Uva" },
     { country: "EUA", flag: "🇺🇸", products: "Cereja" },
     { country: "Portugal", flag: "🇵🇹", products: "Maçã, Pera" },
     { country: "Espanha", flag: "🇪🇸", products: "Citros, Caroço, Romã, Kiwi" },
     { country: "França", flag: "🇫🇷", products: "Maçã" },
-    { country: "Holanda", flag: "🇳🇱", products: "Melão" },
+    { country: "Holanda", flag: "🇳🇱", products: "Cebola" },
     { country: "Itália", flag: "🇮🇹", products: "Kiwi, Maçã" },
     { country: "Grécia", flag: "🇬🇷", products: "Kiwi" },
     { country: "Egito", flag: "🇪🇬", products: "Citros e Alho" },

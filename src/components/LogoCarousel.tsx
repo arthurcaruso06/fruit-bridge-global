@@ -10,6 +10,7 @@ import novacoopLogo from "@/assets/logos/novacoop.png";
 import cleeLogo from "@/assets/logos/clee-logo.jpeg";
 import agrolandLogo from "@/assets/logos/agroland-logo.jpeg";
 import propalLogo from "@/assets/logos/propal-logo.jpeg";
+import vegLogo from "@/assets/logos/veg-logo.jpeg";
 
 const logos = [
   { src: frutariaLogo.src, alt: "Frutaria" },
@@ -21,6 +22,7 @@ const logos = [
   { src: cleeLogo.src, alt: "Clee" },
   { src: agrolandLogo.src, alt: "Agroland" },
   { src: propalLogo.src, alt: "Propal" },
+  { src: vegLogo.src, alt: "Veg" },
 ];
 
 // Duplicate for seamless loop
