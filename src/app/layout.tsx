@@ -5,7 +5,7 @@ import { Footer } from "@/components/Footer";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Viva Frutas — Trading Internacional de Frutas",
+  title: "Viva Fruta — Trading Internacional de Frutas",
   description:
     "Representamos produtores globais e garantimos qualidade na chegada, conectando origem e mercado com precisão.",
 };

@@ -77,7 +77,7 @@ export function Footer() {
                 <p className="text-xs uppercase tracking-wider text-primary-foreground/40 mb-1">
                   Viva Fruta SAS
                 </p>
-                <p>Gral. Dr Arturo J. Balinas – Montevideo, Uruguai</p>
+                <p>Gral. Dr Arturo J. Balinas 1145 - Piso 06 – Montevideo, Uruguai</p>
                 <p>RUT: 219035730017</p>
               </div>
             </div>
@@ -85,7 +85,7 @@ export function Footer() {
         </div>
 
         <div className="mt-16 pt-8 border-t border-primary-foreground/10 text-xs text-primary-foreground/40">
-          &copy; {new Date().getFullYear()} Viva Frutas. {t.footer.rights}
+          &copy; {new Date().getFullYear()} Viva Fruta. {t.footer.rights}
         </div>
       </div>
     </footer>
