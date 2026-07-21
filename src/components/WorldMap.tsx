@@ -7,10 +7,11 @@ import { useIsMobile } from "@/hooks/use-mobile";
 // Equirectangular: x=(lon+180)/360*900, y=(90-lat)/180*500
 const brazil = { x: 333.5, y: 315.3 };
 
-const countries = [
+const countries: { name: string; x: number; y: number; label: string; labelDy?: number }[] = [
   { name: "USA", x: 151.5, y: 147.8, label: "EUA" },
   { name: "Chile", x: 273.2, y: 342.8, label: "Chile" },
   { name: "Argentina", x: 304.0, y: 346.1, label: "Argentina" },
+  { name: "Uruguay", x: 320.0, y: 337.0, label: "Uruguai", labelDy: 16 },
   { name: "Peru", x: 262.5, y: 275.0, label: "Peru" },
   { name: "Spain", x: 440.8, y: 137.8, label: "Espanha" },
   { name: "Portugal", x: 430.0, y: 141.6, label: "Portugal" },
@@ -143,7 +144,7 @@ export function WorldMap() {
             />
             <text
               x={c.x}
-              y={c.y - 10}
+              y={c.y + (c.labelDy ?? -10)}
               textAnchor="middle"
               fontSize="8"
               fill="currentColor"

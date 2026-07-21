@@ -273,25 +273,26 @@ function GlobalSection() {
   const { t } = useTranslation();
 
   const stats = [
-    { value: "7+", label: "Países" },
-    { value: "3", label: "Continentes" },
+    { value: "12+", label: "Países" },
+    { value: "4", label: "Continentes" },
     { value: "365", label: "Dias ativos" },
     { value: "100%", label: "Rastreável" },
   ];
 
   const origins = [
-    { country: "Chile", flag: "🇨🇱", products: "Uva, Cereja, Caroço, Maçã, Kiwi" },
+    { country: "Chile", flag: "🇨🇱", products: "Uva, Cereja, Caroço, Maçã, Kiwi, Citros" },
     { country: "Argentina", flag: "🇦🇷", products: "Citros, Maçã, Pera, Mirtilo" },
-    { country: "Peru", flag: "🇵🇪", products: "Uva" },
-    { country: "EUA", flag: "🇺🇸", products: "Cereja" },
+    { country: "Uruguai", flag: "🇺🇾", products: "Citros" },
+    { country: "Peru", flag: "🇵🇪", products: "Uva, Mirtilo, Romã" },
+    { country: "EUA", flag: "🇺🇸", products: "Cereja, Pera, Maçã, Caroço" },
     { country: "Portugal", flag: "🇵🇹", products: "Maçã, Pera" },
-    { country: "Espanha", flag: "🇪🇸", products: "Citros, Caroço, Romã, Kiwi" },
+    { country: "Espanha", flag: "🇪🇸", products: "Citros, Caroço, Romã, Kiwi, Maçã" },
     { country: "França", flag: "🇫🇷", products: "Maçã" },
     { country: "Holanda", flag: "🇳🇱", products: "Cebola" },
     { country: "Itália", flag: "🇮🇹", products: "Kiwi, Maçã" },
     { country: "Grécia", flag: "🇬🇷", products: "Kiwi" },
-    { country: "Egito", flag: "🇪🇬", products: "Citros e Alho" },
-    { country: "China", flag: "🇨🇳", products: "Alho e Pera" },
+    { country: "Egito", flag: "🇪🇬", products: "Citros, Alho, Morango Congelado" },
+    { country: "China", flag: "🇨🇳", products: "Alho, Pera, Batata Congelada" },
   ];
 
   return (
