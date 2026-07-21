@@ -139,7 +139,7 @@ const pt: TranslationSet = {
     history: "Nossa História",
     team: "Nosso Time",
     products: "Produtos",
-    sas: "SAS",
+    sas: "Viva Fruta SAS",
     contact: "Contatos",
   },
   hero: {
@@ -209,8 +209,8 @@ const pt: TranslationSet = {
     cta: "Conheça nosso time",
   },
   sasPreview: {
-    title: "SAS",
-    text: "Conheça a SAS, nossa empresa de trade especializada na comercialização e distribuição de frutas frescas importadas.",
+    title: "Viva Fruta SAS",
+    text: "Conheça a Viva Fruta SAS, nossa empresa de trade especializada na comercialização e distribuição de frutas frescas importadas.",
     cta: "Saiba mais",
   },
   historyPage: {
@@ -246,11 +246,10 @@ const pt: TranslationSet = {
     ],
   },
   sasPage: {
-    title: "SAS",
+    title: "Viva Fruta SAS",
     paragraphs: [
-      "A SAS é uma empresa de trade especializada na comercialização e distribuição de frutas frescas importadas, com foco em atender atacadistas, distribuidores e grandes centros de abastecimento, como o CEASA.",
-      "Atuando de forma estratégica e alinhada com operações de importação, a SAS tem como principal missão potencializar a presença de produtos no mercado, oferecendo soluções comerciais ágeis, relacionamento próximo com os clientes e atuação direta nos principais pontos de distribuição.",
-      "Com uma operação enxuta, eficiente e altamente conectada às demandas do setor hortifruti, a SAS se posiciona como uma ponte entre importadores e fornecedores, agregando valor à cadeia e garantindo a entrega de produtos com qualidade e frescor.",
+      "A Viva Fruta SAS é uma empresa de trade especializada na comercialização e distribuição de frutas frescas importadas, com foco em atender os clientes e parceiros da Viva Fruta.",
+      "Com uma operação enxuta, eficiente e altamente conectada às demandas do setor hortifruti, a Viva Fruta SAS se posiciona como uma ponte entre importadores e fornecedores, agregando valor à cadeia e garantindo a entrega de produtos com qualidade e frescor.",
     ],
   },
   contactPage: {
@@ -273,7 +272,7 @@ const en: TranslationSet = {
     history: "Our History",
     team: "Our Team",
     products: "Products",
-    sas: "SAS",
+    sas: "Viva Fruta SAS",
     contact: "Contact",
   },
   hero: {
@@ -343,8 +342,8 @@ const en: TranslationSet = {
     cta: "Meet our team",
   },
   sasPreview: {
-    title: "SAS",
-    text: "Discover SAS, our trade company specialized in the commercialization and distribution of imported fresh fruits.",
+    title: "Viva Fruta SAS",
+    text: "Discover Viva Fruta SAS, our trade company specialized in the commercialization and distribution of imported fresh fruits.",
     cta: "Learn more",
   },
   historyPage: {
@@ -380,11 +379,10 @@ const en: TranslationSet = {
     ],
   },
   sasPage: {
-    title: "SAS",
+    title: "Viva Fruta SAS",
     paragraphs: [
-      "SAS is a trade company specialized in the commercialization and distribution of imported fresh fruits, focused on serving wholesalers, distributors and large supply centers, such as CEASA.",
-      "Operating strategically and aligned with import operations, SAS's main mission is to maximize product presence in the market, offering agile commercial solutions, close customer relationships and direct operations at key distribution points.",
-      "With a lean, efficient operation highly connected to the demands of the horticultural sector, SAS positions itself as a bridge between importers and suppliers, adding value to the chain and ensuring the delivery of products with quality and freshness.",
+      "Viva Fruta SAS is a trade company specialized in the commercialization and distribution of imported fresh fruits, focused on serving Viva Fruta's clients and partners.",
+      "With a lean, efficient operation highly connected to the demands of the horticultural sector, Viva Fruta SAS positions itself as a bridge between importers and suppliers, adding value to the chain and ensuring the delivery of products with quality and freshness.",
     ],
   },
   contactPage: {
@@ -404,7 +402,7 @@ const es: TranslationSet = {
     history: "Nuestra Historia",
     team: "Nuestro Equipo",
     products: "Productos",
-    sas: "SAS",
+    sas: "Viva Fruta SAS",
     contact: "Contacto",
   },
   hero: {
@@ -474,8 +472,8 @@ const es: TranslationSet = {
     cta: "Conoce nuestro equipo",
   },
   sasPreview: {
-    title: "SAS",
-    text: "Conozca la SAS, nuestra empresa de trade especializada en la comercialización y distribución de frutas frescas importadas.",
+    title: "Viva Fruta SAS",
+    text: "Conozca la Viva Fruta SAS, nuestra empresa de trade especializada en la comercialización y distribución de frutas frescas importadas.",
     cta: "Saber más",
   },
   historyPage: {
@@ -511,11 +509,10 @@ const es: TranslationSet = {
     ],
   },
   sasPage: {
-    title: "SAS",
+    title: "Viva Fruta SAS",
     paragraphs: [
-      "La SAS es una empresa de trade especializada en la comercialización y distribución de frutas frescas importadas, con foco en atender mayoristas, distribuidores y grandes centros de abastecimiento, como el CEASA.",
-      "Actuando de forma estratégica y alineada con operaciones de importación, la SAS tiene como principal misión potencializar la presencia de productos en el mercado, ofreciendo soluciones comerciales ágiles, relación cercana con los clientes y actuación directa en los principales puntos de distribución.",
-      "Con una operación eficiente y altamente conectada a las demandas del sector hortofrutícola, la SAS se posiciona como un puente entre importadores y proveedores, agregando valor a la cadena y garantizando la entrega de productos con calidad y frescura.",
+      "La Viva Fruta SAS es una empresa de trade especializada en la comercialización y distribución de frutas frescas importadas, con foco en atender a los clientes y socios de Viva Fruta.",
+      "Con una operación eficiente y altamente conectada a las demandas del sector hortofrutícola, la Viva Fruta SAS se posiciona como un puente entre importadores y proveedores, agregando valor a la cadena y garantizando la entrega de productos con calidad y frescura.",
     ],
   },
   contactPage: {
