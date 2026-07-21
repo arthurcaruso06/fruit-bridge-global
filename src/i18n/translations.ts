@@ -60,7 +60,7 @@ const contacts: Contact[] = [
     name: "André Schenk",
     email: "andre@vivafruta.com.br",
     phone: "+55 11 98178-4445",
-    department: "CO",
+    department: "Sócio Gerente",
   },
   {
     name: "Rosana Melo",
@@ -72,7 +72,7 @@ const contacts: Contact[] = [
     name: "Eduardo Tomazian",
     email: "eduardo@vivafruta.com.br",
     phone: "+55 11 94242-4445",
-    department: "Comercial",
+    department: "Gerente Comercial",
   },
   {
     name: "Marcio Nascimento",
