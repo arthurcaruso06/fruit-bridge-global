@@ -68,7 +68,7 @@ export default function SasPage() {
             Endereço
           </h3>
           <p className="text-foreground/80 text-base lg:text-lg font-light leading-relaxed">
-            Gral. Dr Arturo J. Balinas
+            Gral. Dr Arturo J. Balinas 1145 - Piso 06
             <br />
             Montevideo, Uruguai
           </p>
